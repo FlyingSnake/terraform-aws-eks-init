@@ -1,6 +1,6 @@
 # terraform-aws-eks
 
-AWS EKS Resource Initialization Module
+AWS EKS Initialization Module
 
 ## Usage
 
