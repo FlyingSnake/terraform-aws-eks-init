@@ -5,7 +5,7 @@ AWS EKS Initialization Module
 ## Usage
 
 ```hcl
-module "terraform-eks-network" {
+module "eks-init" {
   source      = "FlyingSnake/eks-init/aws"
 
   name_prefix = "TF-"
