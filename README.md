@@ -1,4 +1,4 @@
-# terraform-aws-eks
+# eks-init
 
 AWS EKS Initialization Module
 
