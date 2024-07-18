@@ -42,7 +42,7 @@ variable "eks_cluster" {
   })
   default = {
     name       = "eks-cluster"
-    version    = "1.29"
+    version    = "1.30"
     subnet_ids = []
     endpoint_access = {
       private            = true
