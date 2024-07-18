@@ -18,7 +18,7 @@ module "terraform-aws-eks-init" {
 
   eks_cluster = {
     name    = "eks-cluster"
-    version = "1.29"
+    version = "1.30"
     endpoint_access = {
       private = true
       public  = false
