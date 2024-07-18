@@ -74,8 +74,8 @@ variable "eks_cluster" {
     error_message = "[var.eks_cluster.subnet_ids] => There must be at least 2 subnets."
   }
   validation {
-    condition     = contains(["1.29", "1.28", "1.27", "1.26"], var.eks_cluster.version)
-    error_message = "[var.eks_cluster.version] => cluster version must be in ['1.29','1.28', '1.27', '1.26']"
+    condition     = can(tonumber(var.eks_cluster.version)) && tonumber(var.eks_cluster.version) > 1.28
+    error_message = "[var.eks_cluster.version] => cluster version must be greater than 1.28."
   }
 }
 
